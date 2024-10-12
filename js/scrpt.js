@@ -27,3 +27,14 @@ let ex_03 = Math.ceil(Math.random() * 5);
 document.write(`<img src= "./img/molang${ex_03}.jpg" style= "width:200px;">`);
 
 document.write("<hr>");
+
+// const catimg = [];
+const ex_04 = [
+  `<img src = "img/cat_icon1.png" style = "width:100px;">`,
+  `<img src = "img/cat_icon2.png" style = "width:100px;">`,
+  `<img src = "img/cat_icon3.png" style = "width:100px;">`,
+  `<img src = "img/cat_icon4.png" style = "width:100px;">`,
+  `<img src = "img/cat_icon5.png" style = "width:100px;">`,
+  `<img src = "img/cat_icon6.png" style = "width:100px;">`,
+];
+document.write(ex_04);
