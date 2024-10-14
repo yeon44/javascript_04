@@ -29,12 +29,39 @@ document.write(`<img src= "./img/molang${ex_03}.jpg" style= "width:200px;">`);
 document.write("<hr>");
 
 // const catimg = [];
-const ex_04 = [
-  `<img src = "img/cat_icon1.png" style = "width:100px;">`,
-  `<img src = "img/cat_icon2.png" style = "width:100px;">`,
-  `<img src = "img/cat_icon3.png" style = "width:100px;">`,
-  `<img src = "img/cat_icon4.png" style = "width:100px;">`,
-  `<img src = "img/cat_icon5.png" style = "width:100px;">`,
-  `<img src = "img/cat_icon6.png" style = "width:100px;">`,
+// const ex_04 = [
+//   `<img src = "img/cat_icon1.png" style = "width:100px;">`,
+//   `<img src = "img/cat_icon2.png" style = "width:100px;">`,
+//   `<img src = "img/cat_icon3.png" style = "width:100px;">`,
+//   `<img src = "img/cat_icon4.png" style = "width:100px;">`,
+//   `<img src = "img/cat_icon5.png" style = "width:100px;">`,
+//   `<img src = "img/cat_icon6.png" style = "width:100px;">`,
+// ];
+// const ex_04_1 = ex_04.split(",");
+// document.write(ex_04);
+
+// for (let ex_04 = 0; ex_04 <= 6; ex_04++) {
+//   document.write(
+//     `<img src = "img/cat_icon${ex_04}.png" style = "width:100px;" >`
+//   );
+// }
+
+// let ex_04 = `<img src = "img/cat_icon1.png" style = "width:100px;">``<img src = "img/cat_icon2.png" style = "width:100px;">``<img src = "img/cat_icon3.png" style = "width:100px;">``<img src = "img/cat_icon4.png" style = "width:100px;">``<img src = "img/cat_icon5.png" style = "width:100px;">``<img src = "img/cat_icon6.png" style = "width:100px;">`;
+
+// for (let ex_04_cat; ex_04_cat <= ex_04.length; ex_04++) {
+//   document.write(ex_04);
+// }
+
+let ex_04 = [
+  "img/cat_icon1.png",
+  "img/cat_icon2.png",
+  "img/cat_icon3.png",
+  "img/cat_icon4.png",
+  "img/cat_icon5.png",
+  "img/cat_icon6.png",
 ];
-document.write(ex_04);
+for (let catimg = 0; catimg < ex_04.length; catimg++) {
+  console.log(catimg);
+  console.log(ex_04[catimg]);
+  document.write(`<img src = "./${ex_04[catimg]}" style = "width:100px;">`);
+}
